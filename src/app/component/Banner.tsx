@@ -5,10 +5,11 @@ import Image from 'next/image';
 
 export const Banner = () => (
   <section className='bg-white py-10 antialiased dark:bg-gray-900 md:py-20'>
-    <div className='w-full py-8 lg:py-16'>
+    {/* hero section */}
+    <div className='w-full  py-8 lg:py-16 bg-blue-100'>
       <div className='container mx-auto'>
-        <div className='grid grid-cols-1 gap-8 items-center md:grid-cols-2'>
-          <div className='flex gap-4 flex-col'>
+        <div className='grid grid-cols-1 gap-8 items-center lg:grid-cols-2'>
+          <div className='flex gap-4 flex-col px-8'>
             <div>
               <Badge variant='outline'>We&apos;re live!</Badge>
             </div>
@@ -32,18 +33,19 @@ export const Banner = () => (
               </Button>
             </div>
           </div>
-          <div className='grid grid-cols-2 gap-8'>
-            <div className='bg-muted rounded-md aspect-square'>
-              <Image src={''} alt='divece'></Image>
-            </div>
-            <div className='bg-muted rounded-md row-span-2'></div>
-            <div className='bg-muted rounded-md aspect-square'></div>
+          <div className=' rounded-md   '>
+            <Image
+              src={'/image/hero-1.png'}
+              alt='heroimag'
+              width={500}
+              height={700}
+            ></Image>
           </div>
         </div>
       </div>
     </div>
 
-    <div className='mx-auto grid max-w-screen-xl grid-cols-2 gap-8 text-gray-500 dark:text-gray-400 sm:grid-cols-3 sm:gap-12 lg:grid-cols-6 px-4'>
+    <div className='mx-auto grid max-w-screen-xl grid-cols-2 gap-8 text-gray-500 dark:text-gray-400 sm:grid-cols-3 sm:gap-12 lg:grid-cols-6 px-4 py-8'>
       <a href='#' className='flex items-center md:justify-center'>
         <svg
           className='h-10 hover:text-gray-900 dark:hover:text-white'
