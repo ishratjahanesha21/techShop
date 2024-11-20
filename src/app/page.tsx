@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Hero from './component/img-carosel';
-
 import { Banner } from './component/Banner';
 import { Feature5 } from './component/catagory';
 
