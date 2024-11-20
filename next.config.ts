@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -10,9 +10,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'assets.example.com',
         port: '',
-        pathname: '/account123/**',
-      },
-    ],
-  },
-}
+        pathname: '/account123/**'
+      }
+    ]
+  }
+};
+
 export default nextConfig;

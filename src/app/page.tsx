@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import Hero from './component/img-carosel';
 
-import ProductCard from './pages';
 import { Banner } from './component/Banner';
 import { Feature5 } from './component/catagory';
 
 import { Feature6 } from './component/Features';
-// import Component from "./component/Carosels";
 
 export default async function Home() {
   return (
