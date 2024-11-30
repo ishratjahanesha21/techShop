@@ -36,7 +36,7 @@ export const Banner = () => (
           <div className=' rounded-md   '>
             <Image
               src={'/image/hero-1.png'}
-              alt='heroimag'
+              alt='heroImag'
               width={500}
               height={700}
             ></Image>

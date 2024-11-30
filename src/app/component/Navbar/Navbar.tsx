@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger
 } from '@/components/ui/navigation-menu';
-import { Menu, MoveRight, X } from 'lucide-react';
+import { Menu, MoveRight, ShoppingCart, X } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -43,7 +43,7 @@ export const Header1 = () => {
       ]
     },
     {
-      title: 'Catagories',
+      title: 'Categories',
       description: 'Managing a small business today is already tough.',
       items: [
         {
@@ -95,9 +95,6 @@ export const Header1 = () => {
                                 {item.description}
                               </p>
                             </div>
-                            <Button size='sm' className='mt-10'>
-                              Book a call today
-                            </Button>
                           </div>
                           <div className='flex flex-col text-sm h-full justify-end'>
                             {item.items?.map((subItem) => (
@@ -124,12 +121,14 @@ export const Header1 = () => {
           <p className='font-semibold'>TechWB</p>
         </div>
         <div className='flex justify-end w-full gap-4'>
-          <Link href={'/contactus'} className='hidden md:inline'>
+          <Link href={'/contact'} className='hidden md:inline'>
             Contact Us
           </Link>
           <div className='border-r hidden md:inline'></div>
-          <Link href={'/singup'}>Sign in</Link>
-          <Button className='bg-yellow-400'>Get started</Button>
+          <Link href={'/singUp'}>Register/Log in</Link>
+          <Button className='bg-yellow-400'>
+            <ShoppingCart />
+          </Button>
         </div>
         <div className='flex w-12 shrink lg:hidden items-end justify-end'>
           <Button variant='ghost' onClick={() => setOpen(!isOpen)}>
